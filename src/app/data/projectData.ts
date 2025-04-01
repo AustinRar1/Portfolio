@@ -4,9 +4,8 @@ export const columnOneCards = [
         title: 'Energy Force', 
         navLink: 'https://energyforce.net/', 
         image: '../../../assets/imgs/EnergyForce.png', 
-        excerpt: 'A C# application for energy companies to track and bill energy products accurately and efficiently',
-        description: `Maintained and upgraded an internal company-facing application used by energy providers. Played a key role in modernizing legacy WinForms and C# applications into scalable Angular 15 web solutions. Led the transition from a desktop-based system to a web app, integrating multiple data sources to deliver real-time, reliable information. Built admin tools and customer-facing features to improve internal workflows and external transparency. 
-        Created a detailed Entity Relationship Diagram (ERD) to streamline onboarding for new developers and authored a learner’s guide to support C# developers transitioning to Angular.`
+        excerpt: 'An application for energy companies to track and bill energy products accurately and efficiently.',
+        description: `As one of three core developers, I contributed to the maintenance and modernization of an internal application used by energy providers. I played a key role in transforming legacy WinForms and C# systems into scalable Angular 15 web solutions. This included leading the transition from a desktop-based architecture to a dynamic web platform, integrating multiple data sources to provide real-time, reliable information. I developed admin tools and customer-facing features to enhance operational efficiency and transparency. To support team growth, I created a comprehensive Entity Relationship Diagram (ERD) for faster onboarding and authored a learner’s guide to help C# developers transition smoothly into Angular development.`
     },
     {
       title: 'Eli lily', 
@@ -22,7 +21,7 @@ export const columnOneCards = [
     {
       title: 'CLR Auto', navLink: 'https://www.clrautotransport.com/', 
       image: '../../../assets/imgs/CLR.png', 
-      excerpt: 'this is a description for this project ',
+      excerpt: 'CLR Auto is a company specializing in state-to-state transportation and secure storage of fleet vehicles, providing reliable logistics and fleet management solutions for businesses.',
       description: 'test description'
     },
     {
@@ -38,7 +37,7 @@ export const columnTwoCards=[
     {
         title: 'Helena Agvance Sky', 
         navLink: 'https://agvance.net/', 
-        image: '../../../assets/imgs/eliLilly.png', 
+        image: '../../../assets/imgs/Agvance.png', 
         excerpt: 'An agronomy application designed to help farming cooperatives provide farmers with detailed, region-specific crop information and insights.',
         description: 'test description'
     },
@@ -58,8 +57,8 @@ export const columnTwoCards=[
     },
     {
       title: 'Cattle Paddocks', 
-      navLink: '', 
-      image: '../../../assets/imgs/eliLilly.png', 
+      navLink: 'https://caiready.com/', 
+      image: '../../../assets/imgs/CAI.png', 
       excerpt: 'this is a description for this project',
       description: 'test description'
     },
