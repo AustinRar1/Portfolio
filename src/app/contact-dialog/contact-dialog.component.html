@@ -1,0 +1,35 @@
+<mat-dialog-content>
+    <div class="h2 black"> Contact Me!</div>
+    <form formGroup="emailForm">
+        <div class="text-fields">
+            <div class="form-name display-flex-column">
+                <label for="Name" class="off-black">Name</label>
+                <input type="text" #name/>
+            </div>
+            <div class="form-email display-flex-column">
+                <label for="Email" class="off-black">Email</label>
+                <input type="email" #email email/>
+            </div>
+            <div class="form-content">
+                <label for="Message" class="off-black">Message</label>
+                <textarea class="input-content" type="text" #message></textarea>
+            </div>
+        </div>
+        <div class="my-email">Dont want to use this form? Contact me here: {{"ajrardin@gmail.com"}}
+            <div 
+            mat-button
+            class="copy button" 
+            #tooltip="matTooltip"
+            matTooltip="Copied!"
+            matTooltipPosition="above"
+            [matTooltipDisabled]="copiedTooltipDisabled"
+            (click)="copyEmail()">
+                <fa-icon [icon]="faCopy" size="lg"></fa-icon>
+        </div>
+        </div>
+        <div class="button-container">
+            <div class="display-button warn" mat-dialog-close>Cancel</div>
+            <div class="display-button action" (click)="sendEmail(name.value, email.value, message.value)" mat-dialog-close >Submit</div>
+        </div>
+    </form>
+</mat-dialog-content>

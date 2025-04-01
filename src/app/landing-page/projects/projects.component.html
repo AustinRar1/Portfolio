@@ -1,0 +1,33 @@
+    <div class="project-container">
+        <div class="big-text black title" [@fadeIn]="fadeIn" >Projects</div>
+        <div class="card-containers" [@fadeInUp]="fadeInUp">
+            <div class="card-column-container-1">
+                <div *ngFor="let card of columnOneCards;">
+                    <div class="card black" (click)="addProjectCard([card])" #selectedCard>
+                        <div class="image-container">
+                            <img src="{{card.image}}" alt="" class="card-image">
+                            <div class="image-gradient"></div>
+                        </div>
+                        <div class="card-text-container">
+                            <div class="card-title h2">{{card.title}}</div>
+                            <div class="card-excerpt">{{card.excerpt}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-column-container-2">
+                <div *ngFor="let card of columnTwoCards;" (click)="addProjectCard([card])" #selectedCard>
+                    <div class="card black">
+                        <div class="image-container">
+                            <img src="{{card.image}}" alt="" class="card-image">
+                            <div class="image-gradient"></div>
+                        </div>
+                        <div class="card-text-container">
+                            <div class="card-title h2">{{card.title}}</div>
+                            <div class="card-excerpt">{{card.excerpt}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

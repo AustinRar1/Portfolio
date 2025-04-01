@@ -1,0 +1,92 @@
+.project-container{
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100vh;
+    background-color: white;
+}
+
+// Scroll Bar Visuals
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-track-piece{
+	background-color: #FFF;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #CBCBCB;
+	outline: 2px solid #FFF;
+	outline-offset: -2px;
+	border: .1px solid #B7B7B7;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #909090;
+}
+//
+
+.card-containers{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 3rem;
+    margin: 0 3rem 3rem 3rem;
+}
+
+.card-column-container-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-column-container-2{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale3d(1.02, 1.02, 1);
+}
+
+// Card styling
+.image-container{
+    height: 25%;
+    width: 100%;
+}
+.card{
+    margin-top: 3rem;
+    width: 16rem;
+    height: 18rem;
+    background-color: white;
+    box-shadow: .3rem .2rem .1rem black;
+    border-radius: 6px;
+}
+.card-image{
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.image-gradient{
+    border-radius: 6px 6px 0 0;
+    transform: translateY(-4.8rem); 
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent 30%, black  );
+}
+.card-title{
+    margin-left: 0;
+}
+.card-excerpt{
+    margin-top: 1rem;
+}
+.card-text-container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+//
+

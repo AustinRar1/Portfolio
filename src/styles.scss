@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; font-size: large; }
+body { margin: 0; font-family: "Montserrat", serif; color: white; background-color: rgb(0, 0, 0);}
+textarea, input {
+    outline: none;
+    border: none;
+    box-shadow: .2rem .1rem .1rem black;
+    font-family: inherit;
+    resize: none
+}
+
+.link-no-decoration{
+    text-decoration: none;
+}
+
+.display-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.big-text{
+    line-height: 1rem;
+    text-align: left;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.margin-top-2rem {
+    margin-top: 2rem;
+}
+
+.h1{
+    font-size: 2rem;
+}
+
+.h2{
+    font-size: 1.5rem;
+}
+
+.h3{
+    font-size: 1.3rem;
+}
+
+.h4{
+    font-size: 1rem;
+}
+
+.black{
+    color: black;
+}
+
+.off-black{
+    color: rgb(39, 39, 39);
+}
+
+.warn{
+    color: red;
+}
+
+.action{
+    color: blue;
+}
+
+.button{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .6rem;
+    padding: 0 .2rem 0 0;
+    border-radius: 2px;
+}
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: .2rem .1rem .1rem black;
+}
+
+.title{
+    margin: 2rem;
+}
+
+.display-button{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .6rem;
+    padding: 0 .2rem 0 0;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: .3rem .2rem .2rem black;
+}
+
+.display-button:hover{
+    box-shadow: .2rem .1rem .1rem black;
+}
+
+.button:focus{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .6rem;
+    padding: 0 .2rem 0 0;
+    border-radius: 2px;
+    box-shadow: none;
+}

@@ -1,0 +1,53 @@
+<div class="landing-page-container">
+    <div class="landing-page">
+        <div class="title" [@fadeIn]="fadeIn">
+            <div class="big-text">Fullstack Developer</div>
+            <div class="margin-top-2rem h2">Austin J Rardin</div>
+        </div>
+        <div class="landing-body">
+            <div class="sidebar-container" (mouseover)="isExpanded = true" (mouseout)="isExpanded = false">
+                <div class="sidebar display-flex-column" [ngClass]="{'expanded': isExpanded}">
+                    <a href="https://github.com/AustinRar1" target="_blank" class="button link-no-decoration">
+                        <div class="github icon">
+                            <fa-icon [icon]="faGithub" size="lg"></fa-icon>
+                        </div>
+                        <div class="black menu-text">Github</div>
+                    </a>
+                    <a href="../../assets/AJ Rardin Res.pdf" target="_blank" class="button link-no-decoration">
+                        <div class="resume icon" >
+                            <fa-icon [icon]="faFile" size="lg"></fa-icon>
+                        </div>
+                        <div class="black menu-text">Resume</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/austinrardinli/" target="_blank" class="button link-no-decoration">
+                        <div class="linked-in icon">
+                            <fa-icon [icon]="faLinkedin" size="lg"></fa-icon>
+                        </div>
+                        <div class="black menu-text">Linkedin</div>
+                    </a>
+                    <div class="button" (click)="openDialog()">
+                        <div class="contact icon">
+                            <fa-icon [icon]="faEnvelope" size="lg"></fa-icon>
+                        </div>
+                        <div class="black menu-text">Contact</div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content" [@fadeIn]="fadeIn">
+                <div class="header">
+                    <div class="text-title h3">{{selectedProjectCard?.title}}</div>
+                    <ng-template class="icon-container" [ngIf]="projectSelected" >
+                        <div class="icon-inverted" (click)="revertToDefault()">
+                            <fa-icon [icon]="faXmarkCircle" size="lg"></fa-icon>
+                        </div>
+                    </ng-template>
+                </div>
+                <div class="text-description" [innerHTML]="selectedProjectCard.description | n12Br"></div>
+            </div>
+        </div>
+    </div>
+    <div class="project-component">
+        <div class="box"></div>
+        <app-projects (selectedProjectCard)="projectDataHandler($event)"></app-projects>
+    </div>
+</div>
