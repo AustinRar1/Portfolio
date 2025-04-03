@@ -14,7 +14,7 @@
                         <div class="black menu-text">Github</div>
                     </a>
                     <a href="../../assets/AJ Rardin Res.pdf" target="_blank" class="button link-no-decoration">
-                        <div class="resume icon" >
+                        <div class="resume icon">
                             <fa-icon [icon]="faFile" size="lg"></fa-icon>
                         </div>
                         <div class="black menu-text">Resume</div>
@@ -35,8 +35,11 @@
             </div>
             <div class="body-content" [@fadeIn]="fadeIn">
                 <div class="header">
-                    <div class="text-title h3">{{selectedProjectCard?.title}}</div>
-                    <ng-template class="icon-container" [ngIf]="projectSelected" >
+                    <div class="display-flex-column">
+                        <div class="text-title h3">{{selectedProjectCard.title}}</div>
+                        <div class="h4">{{selectedProjectCard?.company}}</div>
+                    </div>
+                    <ng-template class="icon-container" [ngIf]="projectSelected">
                         <div class="icon-inverted" (click)="revertToDefault()">
                             <fa-icon [icon]="faXmarkCircle" size="lg"></fa-icon>
                         </div>

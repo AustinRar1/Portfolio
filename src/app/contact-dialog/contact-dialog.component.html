@@ -17,15 +17,15 @@
         </div>
         <div class="my-email">Dont want to use this form? Contact me here: {{"ajrardin@gmail.com"}}
             <div 
-            mat-button
-            class="copy button" 
-            #tooltip="matTooltip"
-            matTooltip="Copied!"
-            matTooltipPosition="above"
-            [matTooltipDisabled]="copiedTooltipDisabled"
-            (click)="copyEmail()">
-                <fa-icon [icon]="faCopy" size="lg"></fa-icon>
-        </div>
+                mat-button
+                class="copy button" 
+                #tooltip="matTooltip"
+                matTooltip="Copied!"
+                matTooltipPosition="above"
+                [matTooltipDisabled]="copiedTooltipDisabled"
+                (click)="copyEmail()">
+                    <fa-icon [icon]="faCopy" size="lg"></fa-icon>
+            </div>
         </div>
         <div class="button-container">
             <div class="display-button warn" mat-dialog-close>Cancel</div>
